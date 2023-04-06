@@ -17,13 +17,13 @@ export class NavComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.router.navigate(['chamados/read/1'])
+    this.router.navigate(['home'])
   }
 
   logout(){
     this.router.navigate(['login']);
     this.AuthService.logout();
-    this.toast.info('Logou realizado com sucesso!', 'Logout', { timeOut: 7000 })
+    this.toast.info('Logou realizado com sucesso!', 'Logout', { timeOut: 3000 })
   }
 
 }
